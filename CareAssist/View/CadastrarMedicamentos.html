@@ -1,0 +1,75 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Cadastro de Medicamentos</title>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+          <link rel="stylesheet" href="style.css">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      </head>
+
+  <body>
+    <div>
+    <h1>
+      Cadastro de Medicamentos
+    </h1>
+    </div>
+      <form action="../Controller/Medicamento.php?acao=cadastrar" method = "POST">
+          <div class="mb-3">
+              <label for="exampleInputNome" class="form-label">
+                  Nome
+                  <input type="text" class="form-control" id="exampleInputName" name = "nome">
+              </label>
+          </div>
+          <div>
+            <label for="exampleInputDose" class="form-label">
+              Dose
+              <input type="number" class="form-control" id="exampleInputDose" name="dose">
+          </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputDoseTipo" class="form-label">
+              Métrica da Dose (ml, mg, etc)
+              <input type="text" class="form-control" id="exampleInputDoseTipo" name="dose_tipo">
+          </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputFrequencia" class="form-label">
+              Frequência
+              <input type="text" class="form-control" id="exampleInputFrequencia" name="frequencia">
+          </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputMetodoIngestao" class="form-label">
+              Método de Ingestão
+              <input type="text" class="form-control" id="exampleInputMetodoIngestao" name="metodo_ingestao">
+          </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputFuncao" class="form-label">
+              Função
+              <input type="text" class="form-control" id="exampleInputFuncao" name="funcao">
+          </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputTempoTomar" class="form-label">
+              Tempo de Tomar
+              <input type="text" class="form-control" id="exampleInputTempoTomar" name="tempo_tomar">
+          </label>
+          </div>
+          <div>
+          
+          <button type="submit" action="../Controller/Medicamento.php?acao=cadastrar">Cadastrar</button>
+          <a href="../View/AlterarMedicamentos.html" class="button">Alterar Medicamentos</a>
+        
+        </form>
+    
+    <script>
+    </script>
+
+</body>
+
+</html>

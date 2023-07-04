@@ -1,0 +1,7 @@
+`sys_confirmado_termos_de_uso` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Tabelas
+--
+
